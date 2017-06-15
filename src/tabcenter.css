@@ -1,13 +1,13 @@
 @import url("contextmenu.css");
 
 html, body {
+    background-color: #222;
     height: 100%;
 }
 
 body {
-    background-color: hsl(0, 0%, 99%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #000;
+    color: #aaa;
     font-size: 11px;
     font-weight: 400;
     display: flex;
@@ -32,7 +32,7 @@ body {
     min-width: 26px;
     align-items: center;
     padding: 2px 4px;
-    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    text-shadow: 0 1px rgba(0, 0, 0, .4);
 }
 
 /* This is important for event bubbling: when we click a tab, e.target
@@ -60,13 +60,13 @@ img, .tab *:not(.clickable) {
     top: 31px;
     left: 8px;
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: #000;
     border: 1px solid #C9C9C9;
     box-shadow: 1px 1px 1px #888888;
 }
 
 .newtab-menu-identity:hover {
-    background-color: #D5D5D5;
+    background-color: #AAA;
 }
 
 .newtab-menu-identity {
@@ -178,17 +178,19 @@ img, .tab *:not(.clickable) {
     margin: 0 4px;
     flex: 20 0 auto;
     min-width: 45px;
-    border: 1px solid rgba(0, 0, 0, 0.16);
+    border: 1px solid #555;
     border-radius: 2.5px;
     transition: border-color 0.1s, box-shadow 0.1s;
 }
 
 #searchbox.focused {
+    background-color: #ccc;
     border: 1px solid hsla(210, 100%, 60%, 0.6);
     box-shadow: 0 0 0 3px hsla(210, 100%, 60%, 0.45);
 }
 
 #searchbox-input {
+    background-color: #444;
     flex: 1;
     margin-left: 1;
     padding: 0;
@@ -222,7 +224,7 @@ img, .tab *:not(.clickable) {
 }
 
 .tab.active {
-    background-color: hsla(0, 0%, 0%, 0.12);
+    background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .tab:not(.active):hover {
@@ -261,7 +263,7 @@ img, .tab *:not(.clickable) {
     margin-left: -16px;
     left: 16px;
     top: -19px;
-    background-color: white;
+    background-color: black;
     background-size: contain;
     background-clip: padding-box;
     border: 1px solid hsla(0, 0%, 0%, 0.2);

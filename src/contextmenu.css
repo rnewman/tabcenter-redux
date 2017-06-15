@@ -1,17 +1,17 @@
 ul.contextmenu {
   display: inline-block;
   position: absolute;
-  border: solid 1px #CCCCCC;
+  border: solid 1px #555;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #444;
   box-shadow: 1px 1px 1px #888888;
 }
 
 .contextmenu > hr {
   display: block;
   height: 1px;
-  background-color: #D7D7D7;
+  background-color: #888;
   border: 0;
   margin: 0;
   margin-left: 23px;
